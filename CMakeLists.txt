@@ -144,6 +144,9 @@ set(${PROJECT_NAME}_SOURCE FILES
 #${CPP_COMFILE_FLAGS}
 #)
 
+#include(cmake/create_documents_cmake)
+add_subdirectory(${${PROJECT_NAME}_TEST_PATH})
+
 #Process
 message(STATUS)
 message(STATUS "Finished all process in ${PROJECT_NAME} CMakeLists.txt.")

@@ -4,7 +4,7 @@ set(SLASH "/")
 set(UNDER_BAR "_")
 
 set(${PROJECT_NAME}_${TEST_TYPE}_SOURCE_FILES
-    main
+    utils
 )
 
 function(add_test_executable EXECUTABLE_NAME SOURCE_FILES)

@@ -3,7 +3,7 @@
 #ifndef PROGRAMMERS__MATH__UTILS_HPP_
 #define PROGRAMMERS__MATH__UTILS_HPP_
 
-namespace holyground::mat {
+namespace programmers::math {
 
 // 사칙연산
 // Add, Substract, Multiply, Divide

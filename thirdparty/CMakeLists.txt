@@ -13,13 +13,13 @@ function(build_thirdparty COMFIGURATION_PACKAGE_PATH)
         message(STATUS "Not found ${PROJECT_NAME}! Using ExternalProject.")
         message(STATUS "Start install for ${PROJECT_NAME}.\n")
 
-        configure_file(CMakeLists.txt.in ${PROJECT_NAME}/CMakeLists.txt) #configure file: configuration 진행
-        execute_process( #외부 프로젝트 빌드
-        COMMAND ${CMAKE_COMMAND} "${CMAKE_GENERATOR}" .
-        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME})
+        configure_file(CMakeLists.txt.in ${PROJECT_NAME}/CMakeLists.txt) # configure file: configuration 진행
+        execute_process( # 외부 프로젝트 빌드
+            COMMAND ${CMAKE_COMMAND} "${CMAKE_GENERATOR}" .
+            WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME})
         execute_process(
-        COMMAND ${CMAKE_COMMAND} --build .
-        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME})
+            COMMAND ${CMAKE_COMMAND} --build .
+            WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME})
         message(STATUS "Finish install for ${PROJECT_NAME}.\n")
     endif()
 

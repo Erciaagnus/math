@@ -11,7 +11,7 @@ project(
     LANGUAGES CXX
     VERSION 1.0.0
     DESCRIPTION ""
-    HOMEPAGE_URL "https://github.com/Inah-choi/cpp_project_template.git"
+    HOMEPAGE_URL "https://github.com/Erciaagnus/math.git"
 )
 message(STATUS)
 message(STATUS "Started all process in ${PROJECT_NAME} CMakeLists.txt.")
